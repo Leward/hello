@@ -1,0 +1,18 @@
+version: '2'
+services:
+  hello-lb:
+    image: rancher/lb-service-haproxy:v0.7.9
+    ports:
+    - 8080:8080/tcp
+    labels:
+      io.rancher.container.agent.role: environmentAdmin
+      io.rancher.container.create_agent: 'true'
+      io.rancher.scheduler.global: 'true'
+  hello-back:
+    image: hello/hello
+    stdin_open: true
+    tty: true
+    ports:
+        - 8888:8080/tcp
+    labels:
+      io.rancher.container.pull_image: always
