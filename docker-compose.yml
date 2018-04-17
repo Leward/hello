@@ -9,7 +9,7 @@ services:
       io.rancher.container.create_agent: 'true'
       io.rancher.scheduler.global: 'true'
   hello-back:
-    image: hello/hello
+    image: leward/hello
     stdin_open: true
     tty: true
     ports:
