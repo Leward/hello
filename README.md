@@ -1,5 +1,5 @@
-[![Build status](https://circleci.com/gh/Leward/hello.svg?&style=shield&circle-token=3ac863c8cd63eca92a6e3fc94fa6617ac0c95874)](https://circleci.com/gh/Leward/hello)
-
+[![CircleCI](https://circleci.com/gh/Leward/hello.svg?style=svg)](https://circleci.com/gh/Leward/hello)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=eu.leward:hello&metric=alert_status)](https://sonarcloud.io/dashboard?id=eu.leward:hello)
 
 Run project: 
 
