@@ -13,6 +13,18 @@ Verify it works:
 curl http://localhost:8080/hello
 ```
 
+## Tool chain
+
+The code exposes a REST API using Java and Spring Boot.
+
+The project is built using Maven.
+
+CircleCI is used for the Continuous Integration.
+
+The build creates a Docker image that is deployed on Rancher by Cicle CI.
+
+The CircleCI build also monitor the code quality using Sonarqube hosted at Sonarcloud. 
+
 ## Circle CI
 
 Environment variables to configure on [circleci.com](https://circleci.com): 
@@ -34,7 +46,7 @@ Before comitting changes to the `.circleci/config.yml` file,
 
 ## Docker
 
-The project build the `leward/hello` docker image.
+The project builds the `leward/hello` docker image.
 
 Run the project using docker: 
 ```
